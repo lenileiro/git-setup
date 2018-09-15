@@ -86,6 +86,12 @@ Using editor of your choice make `README.md`
 
 `git push -u origin master`
 
+# Errors
+
+incase of push error
+
+`git pull --allow-unrelated-histories`
+
 
 
 

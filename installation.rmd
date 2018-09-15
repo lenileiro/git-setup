@@ -96,4 +96,8 @@ Using editor of your choice make `README.md`
 
 
 
+# Errors
 
+incase of push error
+
+`git pull --allow-unrelated-histories`
