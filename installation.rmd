@@ -76,7 +76,7 @@ cd project
 git init
 
 `
-#Create README.md
+# Create README.md
 
 Using editor of your choice make `README.md`
 
