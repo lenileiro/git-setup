@@ -123,7 +123,9 @@ git branch <branchName>
 
 `
 git branch --list
-git branch -a
+`
+
+`git branch -a
 `
 
 ### switch Branches
@@ -346,8 +348,11 @@ git reset <commitHash>
 Changes are in the working directory
 
 `
+
+same state as 
 git add .
 `
+
 required
 
 #### hard reset
@@ -395,7 +400,7 @@ git log
 git revert <commitHash>
 `
 
-check differents in commit
+check differences in commit
 
 `
 git diff <oldhash> <newhash>
