@@ -112,7 +112,9 @@ git branch <branchName>
 
 `
 git branch --list
-git branch -a
+`
+
+`git branch -a
 `
 
 ### switch Branches
@@ -335,8 +337,11 @@ git reset <commitHash>
 Changes are in the working directory
 
 `
+
+same state as 
 git add .
 `
+
 required
 
 #### hard reset
@@ -384,7 +389,7 @@ git log
 git revert <commitHash>
 `
 
-check differents in commit
+check differences in commit
 
 `
 git diff <oldhash> <newhash>
@@ -396,5 +401,96 @@ Revert last commit by history number
 `
 git revert HEAD~3
 `
+
+# commands with zsh short cut
+
+### status
+
+git status `gst`
+
+### add
+
+git add .  `ga .`
+
+git add --all  `gaa`
+
+git add --patch `gapa`
+
+git add --update `gau`
+
+
+### branch
+
+git branch `gb`
+
+git branch -a `gba`
+
+git branch --remote `gbr`
+
+git branch --set-upstream-to = origin/$(current_branch) `ggsup`
+
+### checkout
+
+git checkout -b `gcb <branch>`
+
+git checkout `gco`
+
+### commit
+
+git commit -a -m `gcam 'commit msg'` 
+
+
+### clean
+git clean -df `gclean`
+
+### cherry pick
+git cherry-pick `gcp`
+
+### diff
+
+git diff `gd`
+
+### fetch
+
+git fetch `gf`
+
+git fetch origin `gfo`
+
+### push and pull
+
+git push `ggp`
+
+git pull `ggl`
+
+git push --set-upstream origin $(current_branch) `gpsup`
+
+### update
+
+git update-index --assume-unchanged `gignore`
+
+
+### log
+
+git log --stat --color `glg`
+
+git log --oneline --decorate --color `glo`
+
+git log --graph --pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all `glola`
+
+
+### stash
+git stash save `gsta`
+
+git stash apply `gstaa`
+
+git stash drop `gstd`
+
+git stash list `gstl`
+
+git stash pop `gstp`
+
+git stash clear `gstc`
+
+git stash show --text `gts`
 
 
